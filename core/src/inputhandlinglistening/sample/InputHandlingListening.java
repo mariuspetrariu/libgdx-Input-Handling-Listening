@@ -45,7 +45,7 @@ public class InputHandlingListening extends ApplicationAdapter implements InputP
                 batch.begin ();
                 for ( int i = 0; i < messages.size; i++ )
                     {
-                        font.draw ( batch , messages.get ( i ) , 20.0f , 720 - 40.0f * ( i + 1 ) );
+                        font.draw ( batch , ( ( i < 9 ) ? "0" : "" ) + ( i + 1 ) + ". " + messages.get ( i ) , 20.0f , 720 - 40.0f * ( i + 1 ) );
                     }
                 batch.end ();
             }
