@@ -54,7 +54,7 @@ public class InputHandlingListening extends ApplicationAdapter implements InputP
         public boolean keyDown ( int keycode )
             {
                 String message = "keyDown keycode= " + keycode;
-                LOGGER_INFO.debug ( message );
+                LOGGER_INFO.info ( message );
                 addMessage ( message );
                 return true;
             }
@@ -63,7 +63,7 @@ public class InputHandlingListening extends ApplicationAdapter implements InputP
         public boolean keyUp ( int keycode )
             {
                 String message = "keyUp keycode= " + keycode;
-                LOGGER_INFO.debug ( message );
+                LOGGER_INFO.info ( message );
                 addMessage ( message );
                 return true;
             }
@@ -72,7 +72,7 @@ public class InputHandlingListening extends ApplicationAdapter implements InputP
         public boolean keyTyped ( char character )
             {
                 String message = "keyTyped keycode= " + character;
-                LOGGER_INFO.debug ( message );
+                LOGGER_INFO.info ( message );
                 addMessage ( message );
                 return true;
             }
@@ -81,7 +81,7 @@ public class InputHandlingListening extends ApplicationAdapter implements InputP
         public boolean touchDown ( int screenX , int screenY , int pointer , int button )
             {
                 String message = "touchDown screenX= " + screenX + " screenY= " + screenY;
-                LOGGER_INFO.debug ( message );
+                LOGGER_INFO.info ( message );
                 addMessage ( message );
                 return true;
             }
@@ -90,7 +90,7 @@ public class InputHandlingListening extends ApplicationAdapter implements InputP
         public boolean touchUp ( int screenX , int screenY , int pointer , int button )
             {
                 String message = "touchUp screenX= " + screenX + " screenY= " + screenY;
-                LOGGER_INFO.debug ( message );
+                LOGGER_INFO.info ( message );
                 addMessage ( message );
                 return true;
             }
@@ -99,7 +99,7 @@ public class InputHandlingListening extends ApplicationAdapter implements InputP
         public boolean touchDragged ( int screenX , int screenY , int pointer )
             {
                 String message = "touchDragged screenX= " + screenX + " screenY= " + screenY;
-                LOGGER_INFO.debug ( message );
+                LOGGER_INFO.info ( message );
                 addMessage ( message );
                 return true;
             }
@@ -108,7 +108,7 @@ public class InputHandlingListening extends ApplicationAdapter implements InputP
         public boolean mouseMoved ( int screenX , int screenY )
             {
                 String message = "mouseMoved screenX= " + screenX + " screenY= " + screenY;
-                LOGGER_INFO.debug ( message );
+                LOGGER_INFO.info ( message );
                 addMessage ( message );
                 return true;
             }
@@ -117,7 +117,7 @@ public class InputHandlingListening extends ApplicationAdapter implements InputP
         public boolean scrolled ( int amount )
             {
                 String message = "scrolled amount= " + amount;
-                LOGGER_INFO.debug ( message );
+                LOGGER_INFO.info ( message );
                 addMessage ( message );
                 return true;
             }
